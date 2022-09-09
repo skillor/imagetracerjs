@@ -63,7 +63,7 @@
 
       function onChange() {
         try {
-            ImageTracer.imageToSVG(inputImage.src, (v) => { outputSvg.innerHTML = v; }, JSON.parse(jsonInput.getValue()));
+            ImageTracer.imageToSVG(inputImage.src, (v) => { outputSvg.innerHTML = v; }, JSON.parse(jsonInput.value));
         } catch(error) {
             console.log(error.message);
         }
